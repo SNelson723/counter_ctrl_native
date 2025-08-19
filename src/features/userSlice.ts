@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-// import { UserRole } from '../interfaces';
-// import { SecurityQuestion } from '../interfaces';
+import { UserRole } from '../interfaces';
+import { SecurityQuestion } from '../interfaces';
 
 export interface NewQuestion {
   id: number;
@@ -22,10 +22,10 @@ export interface UserState {
   resetPassword: boolean;
   company: number;
   security: number;
-  // role: UserRole;
+  role: UserRole;
   securityQuestionId: number;
   securityQuestion: string;
-  // questions: SecurityQuestion[];
+  questions: SecurityQuestion[];
   newQuestion: NewQuestion;
 }
 
@@ -44,10 +44,10 @@ export const initialState: UserState = {
   email: '',
   company: 0,
   security: 0,
-  // role: UserRole.MULTI_STORE,
+  role: UserRole.MULTI_STORE,
   securityQuestionId: 0,
   securityQuestion: '',
-  // questions: [],
+  questions: [],
   newQuestion: { id: 0, answer: '' },
 };
 
@@ -91,9 +91,9 @@ export const userSlice = createSlice({
     setLastSearchType: (state, action: PayloadAction<string>) => {
       state.lastSearchType = action.payload;
     },
-    // setRole: (state, action: PayloadAction<UserRole>) => {
-    //   state.role = action.payload;
-    // },
+    setRole: (state, action: PayloadAction<UserRole>) => {
+      state.role = action.payload;
+    },
     setEmail: (state, action: PayloadAction<string>) => {
       state.email = action.payload;
     },
@@ -103,9 +103,9 @@ export const userSlice = createSlice({
     setSecurityQuestion: (state, action: PayloadAction<string>) => {
       state.securityQuestion = action.payload;
     },
-    // setQuestions: (state, action: PayloadAction<SecurityQuestion[]>) => {
-    //   state.questions = action.payload;
-    // },
+    setQuestions: (state, action: PayloadAction<SecurityQuestion[]>) => {
+      state.questions = action.payload;
+    },
     setNewQuestion: (state, action: PayloadAction<NewQuestion>) => {
       state.newQuestion = action.payload;
     },
