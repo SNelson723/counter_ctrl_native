@@ -1,10 +1,11 @@
 export const theme = {
-  bkg: '',
+  bkg: '#f0f5ff',
   green500: '#10b981',
   green200: '#a7f3d0',
   blue500: '#3b82f6',
   blue200: '#bfdbfe',
   orange500: '#f97316',
   orange200: '#fed7aa',
-  content: '',
+  content: '#1e293b',
+  white: '#ffffff',
 };
