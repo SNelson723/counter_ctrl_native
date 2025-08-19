@@ -1,10 +1,12 @@
 import { StyleSheet } from 'react-native';
+import * as Colors from '../../styles/colors';
 
 export const loginStyles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     padding: 16,
+    backgroundColor: Colors.theme.bkg
   },
   title: {
     fontSize: 24,
@@ -21,10 +23,10 @@ export const loginStyles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   button: {
-    backgroundColor: 'blue',
     paddingVertical: 15,
     borderRadius: 8,
     alignItems: 'center',
+    backgroundColor: Colors.theme.blue500,
   },
   buttonText: {
     color: 'black',
