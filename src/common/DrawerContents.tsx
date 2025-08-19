@@ -11,12 +11,12 @@ const DrawerContents = ({ navigation }: any) => {
   // const context = useAppSelector(state => state.app);
   const insets = useSafeAreaInsets();
 
-  const handleNavigation = (record: string, home: string) => {
-    navigation.navigate(record, {
-      screen: home,
-      params: {},
-    });
-  };
+  // const handleNavigation = (record: string, home: string) => {
+  //   navigation.navigate(record, {
+  //     screen: home,
+  //     params: {},
+  //   });
+  // };
 
   // const handleLogout = () => {
   //   // Clear user data and navigate to login screen
