@@ -125,7 +125,7 @@ export const {
   setLastGroup,
   setLastSearch,
   setLastSearchType,
-  // setRole,
+  setRole,
   setEmail,
   setSecurityQuestionId,
   setSecurityQuestion,

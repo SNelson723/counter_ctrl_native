@@ -12,6 +12,7 @@ export const loginStyles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
     textAlign: 'center',
+    color: Colors.theme.content,
   },
   image: {
     width: 300,
